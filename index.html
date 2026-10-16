@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Se7en Strike Slots — Classic 777 Slot Machine</title>
+    <meta name="description" content="Se7en Strike is a free-to-play social casino experience for iPhone. Spin the reels, scratch lucky cards, and chase the 77,777 coin mega jackpot. No real money, just pure neon fun." />
+    <style>
+        :root {
+            --bg-0: #0b0220;
+            --bg-1: #1a0440;
+            --neon-purple: #b14cff;
+            --neon-blue: #3aa7ff;
+            --neon-green: #2ee5a8;
+            --neon-orange: #ff9b3a;
+            --neon-red: #ff4d6d;
+            --gold: #ffd166;
+            --text: #f4f0ff;
+            --muted: #b3a8d6;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: radial-gradient(1200px 800px at 20% 0%, rgba(177,76,255,0.35), transparent 60%),
+                        radial-gradient(1000px 700px at 90% 100%, rgba(58,167,255,0.30), transparent 60%),
+                        linear-gradient(180deg, var(--bg-0), var(--bg-1));
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+        header {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, var(--neon-purple), var(--neon-blue), var(--neon-green), var(--gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 30px rgba(177,76,255,0.4);
+            margin: 0;
+        }
+        .tag {
+            color: var(--muted);
+            margin-top: 12px;
+            font-size: 18px;
+        }
+        .badge-row {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+            margin-top: 22px;
+        }
+        .badge {
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.05);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        .cta {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--neon-purple), var(--neon-blue));
+            color: white;
+            box-shadow: 0 10px 30px rgba(177,76,255,0.45);
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+        .cta:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(177,76,255,0.6); }
+
+        section { padding: 56px 0; }
+        h2 {
+            font-size: 32px;
+            margin: 0 0 24px;
+            text-align: center;
+            color: var(--gold);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+            border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 18px;
+            padding: 22px;
+        }
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: var(--neon-green);
+        }
+        .card p { margin: 0; color: var(--muted); }
+        .emoji {
+            font-size: 28px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .about {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 22px;
+            padding: 32px;
+            text-align: center;
+        }
+        .about p { color: var(--muted); }
+
+        .disclaimer {
+            border: 1px solid rgba(255, 77, 109, 0.4);
+            background: rgba(255, 77, 109, 0.08);
+            border-radius: 18px;
+            padding: 22px 26px;
+            color: #ffd5dd;
+        }
+        .disclaimer strong { color: var(--neon-red); }
+
+        footer {
+            padding: 60px 0 40px;
+            text-align: center;
+            color: var(--muted);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            margin-top: 60px;
+        }
+        footer a { color: var(--neon-blue); text-decoration: none; margin: 0 8px; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .logo { font-size: 44px; }
+            h2 { font-size: 26px; }
+            section { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo">SE7EN STRIKE</h1>
+            <p class="tag">Classic 777 Slots — A neon social casino experience for iPhone.</p>
+            <div class="badge-row">
+                <span class="badge">Free to Play</span>
+                <span class="badge">No Real Money</span>
+                <span class="badge">18+ Only</span>
+                <span class="badge">iOS 16+</span>
+                <span class="badge">No Account Needed</span>
+            </div>
+            <a class="cta" href="https://apps.apple.com/app/se7en-strike-slots">Download on the App Store</a>
+        </header>
+
+        <section>
+            <h2>Features</h2>
+            <div class="features">
+                <div class="card">
+                    <span class="emoji">🎰</span>
+                    <h3>Classic 777 Slot Machine</h3>
+                    <p>Five reels, three rows, nine configurable paylines, scatter free spins, wild multipliers, and a progressive jackpot worth up to 77,777 coins.</p>
+                </div>
+                <div class="card">
+                    <span class="emoji">🎡</span>
+                    <h3>Lucky Wheel of Fortune</h3>
+                    <p>Eight prize segments up to 5,000 coins. Tap to spin and watch the wheel glide to a glittering stop.</p>
+                </div>
+                <div class="card">
+                    <span class="emoji">🎫</span>
+                    <h3>Scratch Cards</h3>
+                    <p>Six cards per round — scratch to reveal symbols. Match three identical icons to win up to 2,500 coins.</p>
+                </div>
+                <div class="card">
+                    <span class="emoji">📅</span>
+                    <h3>Daily Bonus Streaks</h3>
+                    <p>Claim a free coin reward every day for seven days. The seventh day pays a 7,777-coin jackpot gift.</p>
+                </div>
+                <div class="card">
+                    <span class="emoji">🏆</span>
+                    <h3>Achievements &amp; Leaderboard</h3>
+                    <p>Unlock 14 achievements and climb the global rankings to dethrone VegasQueen and CasinoKing.</p>
+                </div>
+                <div class="card">
+                    <span class="emoji">📷</span>
+                    <h3>Profile Customisation</h3>
+                    <p>Take a profile photo, choose from 8 avatar styles, and edit your display name.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>About Se7en Strike</h2>
+            <div class="about">
+                <p>
+                    Se7en Strike is a premium free-to-play social casino experience crafted exclusively for iPhone.
+                    Every symbol, every animation, and every sound has been tuned to deliver the most exciting casino
+                    feel on mobile — without a single real-world transaction. Spin the reels, scratch lucky cards,
+                    spin the wheel of fortune, and chase the legendary 77,777 coin mega jackpot.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Privacy &amp; Safety</h2>
+            <div class="features">
+                <div class="card">
+                    <h3>No Account Required</h3>
+                    <p>No registration, no login, no email, no password. Just open the app and play.</p>
+                </div>
+                <div class="card">
+                    <h3>No Real Money</h3>
+                    <p>Every coin is virtual and has no real-world value. There is no way to deposit, withdraw, or exchange virtual coins for cash or prizes.</p>
+                </div>
+                <div class="card">
+                    <h3>Local-Only Data</h3>
+                    <p>Your progress, balance, and preferences are stored privately on your device.</p>
+                </div>
+                <div class="card">
+                    <h3>No Ads, No Tracking</h3>
+                    <p>No third-party analytics or advertising SDKs are included in the app.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Responsible Play</h2>
+            <div class="disclaimer">
+                <p>
+                    <strong>18+ only.</strong> Se7en Strike is intended for adults aged 18 and over.
+                    The app contains simulated gambling mechanics that do not involve real money wagering.
+                    Virtual coins have no cash value and cannot be exchanged for real-world currency or prizes.
+                    If you or someone you know needs support, please visit our in-app Responsible Gaming section
+                    for international hotlines or contact
+                    <a href="mailto:mohrdonald13122000@gmail.com" style="color: var(--neon-blue);">mohrdonald13122000@gmail.com</a>.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Se7en Strike Slots. All rights reserved.</p>
+            <p>
+                <a href="support.html">Support</a> ·
+                <a href="privacy.html">Privacy Policy</a> ·
+                <a href="terms.html">Terms of Use</a> ·
+                <a href="mailto:mohrdonald13122000@gmail.com">Contact</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
